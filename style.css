@@ -1,0 +1,61 @@
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    text-align: center;
+    overflow: hidden; /* Hide scrollbars when locked */
+}
+
+/* When the body has the 'locked' class, hide the main content */
+body.locked .main-content {
+    display: none;
+}
+
+.password-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.password-screen input {
+    padding: 10px;
+    margin: 15px 0;
+    border: 2px solid #ff4081;
+    border-radius: 5px;
+    background: transparent;
+    color: #f0f0f0;
+    font-size: 1rem;
+}
+
+.password-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.password-screen button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff4081;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.password-screen button:hover {
+    background-color: #f50057;
+}
+
+.reassurance {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #888;
+}
